@@ -4,37 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Expense Tracker</h1>
-    <hr>
     <div class="card">
-        <h6>Your Balance</h6>
-        <div class="balance">2500</div>
-        <div class="income-card">
-            <h6>Income</h6>
-            <hr>
-            <div class="income">25000</div>
+        <h1>Expense Tracker</h1>
+        <hr>
+        <div class="balance">
+            <h6>Your Balance</h6>
+            <div class="balance">₹2500</div>
         </div>
-        <div class="expense-card">
-            <h6>Expense</h6>
-            <hr>
-            <div class="expense">20000</div>
+        <div class="summary-cards">
+            <div class="income-card">
+                <h6>Income</h6>
+                <hr>
+                <div class="income">₹25000</div>
+            </div>
+            <div class="expense-card">
+                <h6>Expense</h6>
+                <hr>
+                <div class="expense">₹20000</div>
+            </div>
         </div>
         <hr>
-        <h2>Add New Transaction</h2>
-        <form id="transaction">
-            <div>
-                <input type="text" placeholder="Enter Description">
-            </div>
-            <div>
-                <input type="number" placeholder="Enter Amount">
-            </div>
-            <button type="submit" onclick="">Add Transaction</button>
-        </form>
-        <div class="history">
-            <hr>
-            
+        <div class="add-transactions">
+            <h2>Add New Transaction</h2>
+            <form id="transaction">
+                <div>
+                    <input type="text" placeholder="Enter Description">
+                </div>
+                <div>
+                    <input type="number" placeholder="Enter Amount">
+                </div>
+                <button type="submit" onclick="">Add Transaction</button>
+            </form>
+        <div class="transactions">
+            <ul class="list">
+                <li class="plus">
+                    <span class="text">Salary</span>
+                    <span class="amount">+₹25000</span>
+                    <button class="delete">x</button>
+                </li>
+                <li class="minus">
+                    <span class="text">EMI</span>
+                    <span class="amount">-₹20000</span>
+                    <button class="delete">x</button>
+                </li>
+                <li class="plus">
+                    <span class="text">Freelance</span>
+                    <span class="amount">+₹5000</span>
+                    <button class="delete">x</button>
+                </li>
+            </ul>
         </div>
     </div>
 </body>

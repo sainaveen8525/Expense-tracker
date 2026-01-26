@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(223, 225, 226);
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.card{
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card hr{
+    border: none;
+    height: 1px;
+    background-color: #E5E7EB;
+    margin: 10px 0;
+}
+.card .balance{
+    padding: 5px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.card .summary-cards{
+    display: flex;
+    justify-content: space-around;
+}
+.card .income-card{
+    color: #1B7F5A;
+    background-color: #E6F9F0;
+    width: 150px;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.card .expense-card{
+    color: #C0392B;
+    background-color: #FDECEC;
+    width: 150px;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card .add-transactions{
+    text-align: left;
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.card .add-transactions input{
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+}
+.card .add-transactions button{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: #5F27CD;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.card .transactions .list{
+    margin: 10px;
+    padding: 10px;
+}
+.card .transactions .list button{
+    border: none;
+    background-color: transparent;
+    color: #7a7a7a;
+    cursor: pointer;
+}
+.card .transactions .list li{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
