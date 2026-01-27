@@ -10,7 +10,7 @@ body{
 .card{
     background-color: white;
     width: 400px;
-    height: 500px;
+    
     text-align: center;
     margin: 50px auto;
     padding: 20px;
@@ -77,17 +77,34 @@ body{
 }
 
 .card .transactions .list{
-    margin: 10px;
-    padding: 10px;
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 500;
 }
 .card .transactions .list button{
     border: none;
     background-color: transparent;
     color: #7a7a7a;
     cursor: pointer;
+    width: 20px;
+    height: 20px;
 }
 .card .transactions .list li{
     display: flex;
     justify-content: space-between;
-    margin: 10px 0;
+    margin: 10px ;
+}
+
+.card .transactions .list .amount{
+    text-align: right;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.card .transactions .list .plus{
+    color: #1B7F5A;
+}
+.card .transactions .list .minus{
+    color: #C0392B;
 }
