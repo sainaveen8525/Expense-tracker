@@ -13,14 +13,16 @@ const data=[
     {id:1,text:'Salary',amount:5000},
     {id:2,text:'Groceries',amount:-1500},
     {id:3,text:'Book',amount:-500},
-    {id:4,text:'Freelance',amount:2000}
+    {id:4,text:'Freelance',amount:-2000}
 ];
 
 let transactions=data;
 
 function addtransactions(transaction){
-    const sign=transactionlist.amount <0 ? '-' : '+';
+    const sign=transaction.amount <0 ? '-' : '+';
+    //console.log(sign);
     const item=document.createElement('li');
+    
 }
 
 function config(){
