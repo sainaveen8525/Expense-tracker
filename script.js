@@ -1,22 +1,33 @@
-const description = document.querySelector('.description');
-const amount = document.querySelector('input[placeholder="Enter Amount"]');
+const balance=document.querySelector('.your-balance');
+const income=document.querySelector('.income');
+const expense=document.querySelector('.expense');
+const inputText=document.querySelector('.description');
+const inputAmount=document.querySelector('.amount');
+const transactionlist=document.querySelector('.list');
+const inc=document.querySelector('.plus');
+const exp=document.querySelector('.minus');
+const form=document.querySelector('#form');
 
-function plusorminus() {
-    if (Number(amount.value) < 0) {
-        return 'minus';
-    } else {
-        return 'plus';
-    }
+
+const data=[
+    {id:1,text:'Salary',amount:5000},
+    {id:2,text:'Groceries',amount:-1500},
+    {id:3,text:'Book',amount:-500},
+    {id:4,text:'Freelance',amount:2000}
+];
+
+let transactions=data;
+
+function addtransactions(transaction){
+    const sign=transactionlist.amount <0 ? '-' : '+';
+    const item=document.createElement('li');
 }
 
-function addtransaction(){
-    if(description.value === '' || amount.value === ''){
-        alert('please enter the Description and Amount');
-    } else {
-        let li = document.createElement('li');
-        li.classList.add(plusorminus());
-        li.textContent = `${description.value} ${amount.value}`;
-        document.querySelector('ul').appendChild(li);
-        let deletebtn = document.createElement('button');
-    }
+function config(){
+    transactionlist.innerHTML='';
+    transactions.forEach(addtransactions);
 }
+
+window.addEventListener('load',function (){
+    config();
+});
